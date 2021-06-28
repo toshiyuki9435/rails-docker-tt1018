@@ -17,10 +17,10 @@ test:
   docker:
     - image: circleci/ruby:2.7
     - image: circleci/mysql:5.5
-     enviroment:
-       MYSQL_ROOT_PASSWORD: password
-       MYSQL_DATABASE: app_test
-       MYSQL_USER: root
+      enviroment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: app_test
+        MYSQL_USER: root
   enviroment:
     BUNDLE_JOBS: "3"
     BUNDLE_RETRY: "3"
